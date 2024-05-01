@@ -1,0 +1,242 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/update_main_form"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<ListView
+			android:id="@+id/listview1"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:padding="8dp"
+			android:choiceMode="none"
+			android:layout_weight="1" />
+		<LinearLayout
+			android:id="@+id/view_in_click"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/update_layer"
+				android:layout_width="match_parent"
+				android:layout_height="290dp"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<Button
+					android:id="@+id/button1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Delete Ticket"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF"
+					android:layout_weight="1" />
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="What you want to edit as type of ticket information : "
+					android:textSize="18sp"
+					android:textColor="#000000"
+					android:layout_weight="1" />
+				<LinearLayout
+					android:id="@+id/selection_option"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal"
+					android:layout_weight="1">
+					<Button
+						android:id="@+id/from"
+						android:layout_width="wrap_content"
+						android:layout_height="70dp"
+						android:padding="8dp"
+						android:text="Ticket From"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF"
+						android:layout_weight="1" />
+					<Button
+						android:id="@+id/to"
+						android:layout_width="wrap_content"
+						android:layout_height="70dp"
+						android:padding="8dp"
+						android:text="Ticket To"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF"
+						android:layout_weight="1" />
+					<Button
+						android:id="@+id/price"
+						android:layout_width="wrap_content"
+						android:layout_height="70dp"
+						android:padding="8dp"
+						android:text="Ticket Price"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF"
+						android:layout_weight="1" />
+				</LinearLayout>
+				<EditText
+					android:id="@+id/edittext1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B"
+					android:layout_weight="1" />
+				<Button
+					android:id="@+id/edit_the_text"
+					android:layout_width="match_parent"
+					android:layout_height="100dp"
+					android:padding="8dp"
+					android:text="Edit Ticket"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF"
+					android:layout_weight="1" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/Deletion_layer"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Confirm the Ticket Information Before Deletion :"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:layout_weight="1" />
+				<Button
+					android:id="@+id/confirm_deletion"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Confirm"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF"
+					android:layout_weight="1" />
+				<LinearLayout
+					android:id="@+id/linear10"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:layout_weight="1">
+					<LinearLayout
+						android:id="@+id/linear2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:orientation="horizontal"
+						android:layout_weight="1">
+						<TextView
+							android:id="@+id/textview3"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="From : "
+							android:textSize="12sp"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/tk_from"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="TextView"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear3"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:orientation="horizontal"
+						android:layout_weight="1">
+						<TextView
+							android:id="@+id/textview4"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="To : "
+							android:textSize="12sp"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/tk_to"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="TextView"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:orientation="horizontal"
+						android:layout_weight="1">
+						<TextView
+							android:id="@+id/textview5"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="Ticket Id : "
+							android:textSize="12sp"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/tk_id"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear11"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:orientation="horizontal"
+						android:layout_weight="1">
+						<TextView
+							android:id="@+id/textview6"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="Ticket Price : "
+							android:textSize="12sp"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/tk_price"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="TextView"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
