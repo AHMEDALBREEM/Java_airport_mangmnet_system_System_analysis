@@ -1,0 +1,122 @@
+
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="ps.albreem.airman.ps">
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/app_icon"
+		android:label="@string/app_name"
+		android:name=".SketchApplication"
+		android:usesCleartextTraffic="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".MainActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".LoginActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".SginupActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".TasksforcustomerActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".TaskforempActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".TasksformanagerActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".BuyTkActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".TkAddViewActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".TkUpdateMainViewActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".DyAddViewActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".EmpAddViewActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".DyUpdateMainViewActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".InformationActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".DebugActivity"
+			android:screenOrientation="portrait" />
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
+		<provider
+			android:name="com.google.firebase.provider.FirebaseInitProvider"
+			android:authorities="ps.albreem.airman.ps.firebaseinitprovider"
+			android:exported="false"
+			android:initOrder="100" />
+		<service
+			android:name="com.google.firebase.components.ComponentDiscoveryService"
+			android:exported="false">
+			<meta-data
+				android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+				android:value="com.google.firebase.components.ComponentRegistrar" />
+			<meta-data
+				android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+				android:value="com.google.firebase.components.ComponentRegistrar" />
+		</service>
+		<uses-library
+			android:name="org.apache.http.legacy"
+			android:required="false" />
+	</application>
+</manifest>
